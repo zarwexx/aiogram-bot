@@ -1,0 +1,802 @@
+2026-10-24 01:55:04,909 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 01:55:05,067 - WARNING - Updates were skipped successfully.
+2026-10-24 01:55:05,069 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 01:55:05,069 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 01:55:05,069 - INFO - Scheduler started
+2026-10-24 01:55:05,069 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 01:55:05,070 - INFO - Start polling.
+2026-10-24 01:56:17,127 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 114, in start
+    save_user(message.from_user.id)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 100, in save_user
+    with open('users.txt', 'r', encoding= 'UTF-8') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'users.txt'
+2026-10-24 01:57:42,025 - INFO - Scheduler has been shut down
+2026-10-24 01:57:42,026 - INFO - Stop polling...
+2026-10-24 01:57:42,026 - WARNING - Goodbye!
+2026-10-24 01:57:42,026 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 01:57:42,026 - INFO - Start polling.
+2026-10-24 01:57:42,300 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 01:57:43,054 - INFO - Stop polling...
+2026-10-24 01:57:43,055 - WARNING - Goodbye!
+2026-10-24 01:57:52,625 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 01:57:52,795 - WARNING - Updates were skipped successfully.
+2026-10-24 01:57:52,797 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 01:57:52,797 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 01:57:52,797 - INFO - Scheduler started
+2026-10-24 01:57:52,798 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 01:57:52,798 - INFO - Start polling.
+2026-10-24 01:59:27,171 - INFO - Scheduler has been shut down
+2026-10-24 01:59:27,171 - INFO - Stop polling...
+2026-10-24 01:59:27,171 - WARNING - Goodbye!
+2026-10-24 01:59:27,171 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 01:59:27,172 - INFO - Start polling.
+2026-10-24 01:59:27,530 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 01:59:28,485 - INFO - Stop polling...
+2026-10-24 01:59:28,486 - WARNING - Goodbye!
+2026-10-26 06:59:46,182 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 06:59:46,328 - WARNING - Updates were skipped successfully.
+2026-10-26 06:59:46,330 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 06:59:46,331 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 06:59:46,331 - INFO - Scheduler started
+2026-10-26 06:59:46,331 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 06:59:46,331 - INFO - Start polling.
+2026-10-26 07:00:00,012 - INFO - Running job "dialy_notification (trigger: cron[hour='7', minute='0'], next run at: 2026-10-27 07:00:00 MSK)" (scheduled at 2026-10-26 07:00:00+03:00)
+2026-10-26 07:00:00,012 - INFO - начинаю рассыдку. пользователей 1
+2026-10-26 07:00:00,211 - INFO - рассылка завершена
+2026-10-26 07:00:00,211 - INFO - Job "dialy_notification (trigger: cron[hour='7', minute='0'], next run at: 2026-10-27 07:00:00 MSK)" executed successfully
+2026-10-26 07:00:39,087 - INFO - Scheduler has been shut down
+2026-10-26 07:00:39,088 - INFO - Stop polling...
+2026-10-26 07:00:39,088 - WARNING - Goodbye!
+2026-10-26 07:00:39,088 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 07:00:39,088 - INFO - Start polling.
+2026-10-26 07:00:39,358 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-26 07:00:39,481 - INFO - Stop polling...
+2026-10-26 07:00:39,481 - WARNING - Goodbye!
+2026-10-24 23:00:30,304 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:00:30,462 - WARNING - Updates were skipped successfully.
+2026-10-24 23:00:30,466 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:00:30,466 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:00:30,467 - INFO - Scheduler started
+2026-10-24 23:00:30,467 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:00:30,467 - INFO - Start polling.
+2026-10-24 23:01:14,218 - INFO - Scheduler has been shut down
+2026-10-24 23:01:14,218 - INFO - Stop polling...
+2026-10-24 23:01:14,218 - WARNING - Goodbye!
+2026-10-24 23:01:14,219 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:01:14,219 - INFO - Start polling.
+2026-10-24 23:01:14,738 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:01:14,793 - INFO - Stop polling...
+2026-10-24 23:01:14,794 - WARNING - Goodbye!
+2026-10-24 23:01:24,250 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:01:24,405 - WARNING - Updates were skipped successfully.
+2026-10-24 23:01:24,407 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:01:24,408 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:01:24,408 - INFO - Scheduler started
+2026-10-24 23:01:24,409 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:01:24,409 - INFO - Start polling.
+2026-10-24 23:03:49,716 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-95' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 282, in memes
+    await message.answer('Вот самая смешная шутка в этом году:\n', rans_memes)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+2026-10-24 23:04:17,333 - INFO - Scheduler has been shut down
+2026-10-24 23:04:17,333 - INFO - Stop polling...
+2026-10-24 23:04:17,333 - WARNING - Goodbye!
+2026-10-24 23:04:17,333 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:04:17,333 - INFO - Start polling.
+2026-10-24 23:04:17,614 - INFO - Stop polling...
+2026-10-24 23:04:17,615 - WARNING - Goodbye!
+2026-10-24 23:06:16,300 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:06:16,489 - WARNING - Updates were skipped successfully.
+2026-10-24 23:06:16,490 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:06:16,492 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:06:16,492 - INFO - Scheduler started
+2026-10-24 23:06:16,492 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:06:16,492 - INFO - Start polling.
+2026-10-24 23:08:17,622 - INFO - Scheduler has been shut down
+2026-10-24 23:08:17,622 - INFO - Stop polling...
+2026-10-24 23:08:17,623 - WARNING - Goodbye!
+2026-10-24 23:08:17,623 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:08:17,623 - INFO - Start polling.
+2026-10-24 23:08:17,877 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:08:17,918 - INFO - Stop polling...
+2026-10-24 23:08:17,918 - WARNING - Goodbye!
+2026-10-24 23:12:20,395 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:12:20,558 - WARNING - Updates were skipped successfully.
+2026-10-24 23:12:20,560 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:12:20,560 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:12:20,560 - INFO - Scheduler started
+2026-10-24 23:12:20,561 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:12:20,561 - INFO - Start polling.
+2026-10-24 23:13:03,121 - INFO - Scheduler has been shut down
+2026-10-24 23:13:03,121 - INFO - Stop polling...
+2026-10-24 23:13:03,121 - WARNING - Goodbye!
+2026-10-24 23:13:03,121 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:13:03,121 - INFO - Start polling.
+2026-10-24 23:13:03,400 - INFO - Stop polling...
+2026-10-24 23:13:03,400 - WARNING - Goodbye!
+2026-10-24 23:15:21,629 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:15:21,796 - WARNING - Updates were skipped successfully.
+2026-10-24 23:15:21,798 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:15:21,798 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:15:21,798 - INFO - Scheduler started
+2026-10-24 23:15:21,798 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:15:21,799 - INFO - Start polling.
+2026-10-24 23:20:35,417 - INFO - Scheduler has been shut down
+2026-10-24 23:20:35,417 - INFO - Stop polling...
+2026-10-24 23:20:35,417 - WARNING - Goodbye!
+2026-10-24 23:20:35,417 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:20:35,417 - INFO - Start polling.
+2026-10-24 23:20:35,645 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:20:36,326 - INFO - Stop polling...
+2026-10-24 23:20:36,326 - WARNING - Goodbye!
+2026-10-24 23:22:41,501 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:22:41,653 - WARNING - Updates were skipped successfully.
+2026-10-24 23:22:41,655 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:22:41,656 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:22:41,656 - INFO - Scheduler started
+2026-10-24 23:22:41,656 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:22:41,656 - INFO - Start polling.
+2026-10-24 23:30:48,588 - INFO - Scheduler has been shut down
+2026-10-24 23:30:48,588 - INFO - Stop polling...
+2026-10-24 23:30:48,588 - WARNING - Goodbye!
+2026-10-24 23:30:48,588 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:30:48,588 - INFO - Start polling.
+2026-10-24 23:30:48,830 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:30:48,928 - INFO - Stop polling...
+2026-10-24 23:30:48,929 - WARNING - Goodbye!
+2026-10-24 23:30:56,662 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:30:56,797 - WARNING - Updates were skipped successfully.
+2026-10-24 23:30:56,799 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:30:56,799 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:30:56,799 - INFO - Scheduler started
+2026-10-24 23:30:56,799 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:30:56,800 - INFO - Start polling.
+2026-10-24 23:32:25,471 - INFO - Scheduler has been shut down
+2026-10-24 23:32:25,471 - INFO - Stop polling...
+2026-10-24 23:32:25,471 - WARNING - Goodbye!
+2026-10-24 23:32:25,472 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:32:25,472 - INFO - Start polling.
+2026-10-24 23:32:25,627 - WARNING - Goodbye!
+2026-10-24 23:32:32,792 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:32:32,941 - WARNING - Updates were skipped successfully.
+2026-10-24 23:32:32,944 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:32:32,944 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:32:32,944 - INFO - Scheduler started
+2026-10-24 23:32:32,944 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:32:32,944 - INFO - Start polling.
+2026-10-24 23:35:19,797 - INFO - Scheduler has been shut down
+2026-10-24 23:35:19,797 - INFO - Stop polling...
+2026-10-24 23:35:19,797 - WARNING - Goodbye!
+2026-10-24 23:35:19,797 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:35:19,797 - INFO - Start polling.
+2026-10-24 23:35:19,945 - WARNING - Goodbye!
+2026-10-24 23:42:11,355 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:42:11,511 - WARNING - Updates were skipped successfully.
+2026-10-24 23:42:11,513 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:42:11,514 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:42:11,514 - INFO - Scheduler started
+2026-10-24 23:42:11,514 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:42:11,514 - INFO - Start polling.
+2026-10-24 23:42:38,212 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("TelegramObject.to_python() missing 1 required positional argument: 'self'")>
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 232, in gdz_fync
+    await message.answer('Ты выбрал:' + message.text, reply_markup=types.ReplyKeyboardRemove)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\utils\payload.py", line 42, in _normalize
+    return obj.to_python()
+TypeError: TelegramObject.to_python() missing 1 required positional argument: 'self'
+2026-10-24 23:44:49,066 - INFO - Scheduler has been shut down
+2026-10-24 23:44:49,066 - INFO - Stop polling...
+2026-10-24 23:44:49,067 - WARNING - Goodbye!
+2026-10-24 23:44:49,067 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:44:49,067 - INFO - Start polling.
+2026-10-24 23:44:49,296 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:44:49,653 - INFO - Stop polling...
+2026-10-24 23:44:49,653 - WARNING - Goodbye!
+2026-10-24 23:44:57,445 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:44:57,565 - WARNING - Updates were skipped successfully.
+2026-10-24 23:44:57,566 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:44:57,567 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:44:57,567 - INFO - Scheduler started
+2026-10-24 23:44:57,567 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:44:57,568 - INFO - Start polling.
+2026-10-24 23:45:02,760 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("TelegramObject.to_python() missing 1 required positional argument: 'self'")>
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 232, in gdz_fync
+    await message.answer('Ожидайте появления сообщения', reply_markup=types.ReplyKeyboardRemove)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\utils\payload.py", line 42, in _normalize
+    return obj.to_python()
+TypeError: TelegramObject.to_python() missing 1 required positional argument: 'self'
+2026-10-24 23:45:52,774 - INFO - Scheduler has been shut down
+2026-10-24 23:45:52,774 - INFO - Stop polling...
+2026-10-24 23:45:52,774 - WARNING - Goodbye!
+2026-10-24 23:45:52,775 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:45:52,775 - INFO - Start polling.
+2026-10-24 23:45:52,918 - WARNING - Goodbye!
+2026-10-24 23:45:59,923 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:46:00,069 - WARNING - Updates were skipped successfully.
+2026-10-24 23:46:00,071 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:46:00,072 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:46:00,072 - INFO - Scheduler started
+2026-10-24 23:46:00,072 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:46:00,072 - INFO - Start polling.
+2026-10-24 23:46:08,488 - INFO - Scheduler has been shut down
+2026-10-24 23:46:08,488 - INFO - Stop polling...
+2026-10-24 23:46:08,488 - WARNING - Goodbye!
+2026-10-24 23:46:08,489 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:46:08,489 - INFO - Start polling.
+2026-10-24 23:46:09,035 - WARNING - Goodbye!
+2026-10-24 23:46:22,504 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:46:22,631 - WARNING - Updates were skipped successfully.
+2026-10-24 23:46:22,633 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-24 23:46:22,634 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-24 23:46:22,634 - INFO - Scheduler started
+2026-10-24 23:46:22,634 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-24 23:46:22,634 - INFO - Start polling.
+2026-10-24 23:53:53,755 - INFO - Scheduler has been shut down
+2026-10-24 23:53:53,755 - INFO - Stop polling...
+2026-10-24 23:53:53,755 - WARNING - Goodbye!
+2026-10-24 23:53:53,755 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-24 23:53:53,756 - INFO - Start polling.
+2026-10-24 23:53:53,999 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-24 23:53:54,430 - INFO - Stop polling...
+2026-10-24 23:53:54,430 - WARNING - Goodbye!
+2026-10-25 00:07:23,688 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-25 00:07:23,811 - WARNING - Updates were skipped successfully.
+2026-10-25 00:07:23,813 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-25 00:07:23,813 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-25 00:07:23,813 - INFO - Scheduler started
+2026-10-25 00:07:23,813 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-25 00:07:23,814 - INFO - Start polling.
+2026-10-25 00:08:34,479 - INFO - Scheduler has been shut down
+2026-10-25 00:08:34,480 - INFO - Stop polling...
+2026-10-25 00:08:34,480 - WARNING - Goodbye!
+2026-10-25 00:08:34,480 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-25 00:08:34,480 - INFO - Start polling.
+2026-10-25 00:08:34,723 - INFO - Stop polling...
+2026-10-25 00:08:34,723 - WARNING - Goodbye!
+2026-10-26 20:13:44,607 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:13:44,773 - WARNING - Updates were skipped successfully.
+2026-10-26 20:13:44,775 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 20:13:44,776 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 20:13:44,776 - INFO - Scheduler started
+2026-10-26 20:13:44,776 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 20:13:44,776 - INFO - Start polling.
+2026-10-26 20:14:08,939 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'Message' object has no attribute 'get'")>
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 313, in addwork
+    args = message.get.args()
+AttributeError: 'Message' object has no attribute 'get'
+2026-10-26 20:19:10,761 - INFO - Scheduler has been shut down
+2026-10-26 20:19:10,761 - INFO - Stop polling...
+2026-10-26 20:19:10,761 - WARNING - Goodbye!
+2026-10-26 20:19:10,762 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:19:10,762 - INFO - Start polling.
+2026-10-26 20:19:10,947 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-26 20:19:11,123 - INFO - Stop polling...
+2026-10-26 20:19:11,123 - WARNING - Goodbye!
+2026-10-26 20:19:18,902 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:19:19,030 - WARNING - Updates were skipped successfully.
+2026-10-26 20:19:19,032 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 20:19:19,033 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 20:19:19,033 - INFO - Scheduler started
+2026-10-26 20:19:19,033 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 20:19:19,033 - INFO - Start polling.
+2026-10-26 20:28:14,129 - INFO - Scheduler has been shut down
+2026-10-26 20:28:14,130 - INFO - Stop polling...
+2026-10-26 20:28:14,130 - WARNING - Goodbye!
+2026-10-26 20:28:14,130 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:28:14,130 - INFO - Start polling.
+2026-10-26 20:28:14,262 - WARNING - Goodbye!
+2026-10-26 20:28:25,501 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:28:25,678 - WARNING - Updates were skipped successfully.
+2026-10-26 20:28:25,680 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 20:28:25,681 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 20:28:25,681 - INFO - Scheduler started
+2026-10-26 20:28:25,681 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 20:28:25,681 - INFO - Start polling.
+2026-10-26 20:29:23,011 - INFO - Scheduler has been shut down
+2026-10-26 20:29:23,011 - INFO - Stop polling...
+2026-10-26 20:29:23,011 - WARNING - Goodbye!
+2026-10-26 20:29:23,011 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 20:29:23,012 - INFO - Start polling.
+2026-10-26 20:29:23,155 - WARNING - Goodbye!
+2026-10-26 23:00:21,839 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:00:21,990 - WARNING - Updates were skipped successfully.
+2026-10-26 23:00:21,992 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:00:21,993 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:00:21,993 - INFO - Scheduler started
+2026-10-26 23:00:21,994 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:00:21,994 - INFO - Start polling.
+2026-10-26 23:02:32,395 - INFO - Scheduler has been shut down
+2026-10-26 23:02:32,395 - INFO - Stop polling...
+2026-10-26 23:02:32,395 - WARNING - Goodbye!
+2026-10-26 23:02:32,395 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:02:32,395 - INFO - Start polling.
+2026-10-26 23:02:32,551 - INFO - Stop polling...
+2026-10-26 23:02:32,551 - WARNING - Goodbye!
+2026-10-26 23:02:48,906 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:02:49,032 - WARNING - Updates were skipped successfully.
+2026-10-26 23:02:49,034 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:02:49,034 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:02:49,034 - INFO - Scheduler started
+2026-10-26 23:02:49,035 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:02:49,035 - INFO - Start polling.
+2026-10-26 23:03:12,252 - ERROR - Ошибка переводчика
+Traceback (most recent call last):
+  File "c:\Users\zarus\OneDrive\Desktop\School bot telegramm\main.py", line 420, in translate
+    ).translate(text)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\deep_translator\google.py", line 71, in translate
+    raise TooManyRequests()
+deep_translator.exceptions.TooManyRequests: Server Error: You made too many requests to the server.According to google, you are allowed to make 5 requests per secondand up to 200k requests per day. You can wait and try again later oryou can try the translate_batch function
+2026-10-26 23:16:40,401 - INFO - Scheduler has been shut down
+2026-10-26 23:16:40,401 - INFO - Stop polling...
+2026-10-26 23:16:40,401 - WARNING - Goodbye!
+2026-10-26 23:16:40,401 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:16:40,402 - INFO - Start polling.
+2026-10-26 23:16:40,625 - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\zarus\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2026-10-26 23:16:40,722 - INFO - Stop polling...
+2026-10-26 23:16:40,722 - WARNING - Goodbye!
+2026-10-26 23:16:48,111 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:16:48,238 - WARNING - Updates were skipped successfully.
+2026-10-26 23:16:48,240 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:16:48,241 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:16:48,241 - INFO - Scheduler started
+2026-10-26 23:16:48,241 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:16:48,241 - INFO - Start polling.
+2026-10-26 23:17:44,370 - INFO - Scheduler has been shut down
+2026-10-26 23:17:44,370 - INFO - Stop polling...
+2026-10-26 23:17:44,370 - WARNING - Goodbye!
+2026-10-26 23:17:44,371 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:17:44,371 - INFO - Start polling.
+2026-10-26 23:17:44,521 - WARNING - Goodbye!
+2026-10-26 23:45:00,372 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:45:00,509 - WARNING - Updates were skipped successfully.
+2026-10-26 23:45:00,511 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:45:00,512 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:45:00,512 - INFO - Scheduler started
+2026-10-26 23:45:00,512 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:45:00,512 - INFO - Start polling.
+2026-10-26 23:46:45,881 - INFO - Scheduler has been shut down
+2026-10-26 23:46:45,881 - INFO - Stop polling...
+2026-10-26 23:46:45,881 - WARNING - Goodbye!
+2026-10-26 23:46:45,881 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:46:45,881 - INFO - Start polling.
+2026-10-26 23:46:46,032 - WARNING - Goodbye!
+2026-10-26 23:46:52,976 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:46:53,117 - WARNING - Updates were skipped successfully.
+2026-10-26 23:46:53,118 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:46:53,119 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:46:53,119 - INFO - Scheduler started
+2026-10-26 23:46:53,119 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:46:53,119 - INFO - Start polling.
+2026-10-26 23:47:21,053 - INFO - Scheduler has been shut down
+2026-10-26 23:47:21,053 - INFO - Stop polling...
+2026-10-26 23:47:21,053 - WARNING - Goodbye!
+2026-10-26 23:47:21,053 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:47:21,053 - INFO - Start polling.
+2026-10-26 23:47:21,206 - WARNING - Goodbye!
+2026-10-26 23:59:35,951 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-26 23:59:36,081 - WARNING - Updates were skipped successfully.
+2026-10-26 23:59:36,083 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-26 23:59:36,084 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-26 23:59:36,084 - INFO - Scheduler started
+2026-10-26 23:59:36,084 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-26 23:59:36,084 - INFO - Start polling.
+2026-10-27 00:01:35,794 - INFO - Scheduler has been shut down
+2026-10-27 00:01:35,794 - INFO - Stop polling...
+2026-10-27 00:01:35,794 - WARNING - Goodbye!
+2026-10-27 00:01:35,795 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:01:35,795 - INFO - Start polling.
+2026-10-27 00:01:35,935 - WARNING - Goodbye!
+2026-10-27 00:01:43,440 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:01:43,579 - WARNING - Updates were skipped successfully.
+2026-10-27 00:01:43,581 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 00:01:43,582 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-27 00:01:43,582 - INFO - Scheduler started
+2026-10-27 00:01:43,582 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-27 00:01:43,582 - INFO - Start polling.
+2026-10-27 00:04:57,959 - INFO - Scheduler has been shut down
+2026-10-27 00:04:57,959 - INFO - Stop polling...
+2026-10-27 00:04:57,959 - WARNING - Goodbye!
+2026-10-27 00:04:57,959 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:04:57,959 - INFO - Start polling.
+2026-10-27 00:04:58,105 - INFO - Stop polling...
+2026-10-27 00:04:58,105 - WARNING - Goodbye!
+2026-10-27 00:05:05,322 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:05:05,446 - WARNING - Updates were skipped successfully.
+2026-10-27 00:05:05,448 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 00:05:05,449 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-27 00:05:05,449 - INFO - Scheduler started
+2026-10-27 00:05:05,449 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-27 00:05:05,449 - INFO - Start polling.
+2026-10-27 00:05:45,257 - INFO - Scheduler has been shut down
+2026-10-27 00:05:45,257 - INFO - Stop polling...
+2026-10-27 00:05:45,258 - WARNING - Goodbye!
+2026-10-27 00:05:45,258 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:05:45,258 - INFO - Start polling.
+2026-10-27 00:05:45,399 - WARNING - Goodbye!
+2026-10-27 00:05:51,198 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:05:51,348 - WARNING - Updates were skipped successfully.
+2026-10-27 00:05:51,351 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 00:05:51,352 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-27 00:05:51,352 - INFO - Scheduler started
+2026-10-27 00:05:51,352 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-27 00:05:51,352 - INFO - Start polling.
+2026-10-27 00:05:51,866 - INFO - Scheduler has been shut down
+2026-10-27 00:05:51,866 - INFO - Stop polling...
+2026-10-27 00:05:51,866 - WARNING - Goodbye!
+2026-10-27 00:05:51,866 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:05:51,866 - INFO - Start polling.
+2026-10-27 00:05:52,034 - INFO - Stop polling...
+2026-10-27 00:05:52,034 - WARNING - Goodbye!
+2026-10-27 00:06:06,255 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:06:06,398 - WARNING - Updates were skipped successfully.
+2026-10-27 00:06:06,401 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-27 00:06:06,401 - INFO - Added job "dialy_notification" to job store "default"
+2026-10-27 00:06:06,402 - INFO - Scheduler started
+2026-10-27 00:06:06,402 - INFO - бот запущен, рассылка назначена на 07:00
+2026-10-27 00:06:06,402 - INFO - Start polling.
+2026-10-27 00:10:25,473 - INFO - Scheduler has been shut down
+2026-10-27 00:10:25,473 - INFO - Stop polling...
+2026-10-27 00:10:25,474 - WARNING - Goodbye!
+2026-10-27 00:10:25,474 - INFO - Bot: Школьный Помощник [@helpersforschool_bot]
+2026-10-27 00:10:25,474 - INFO - Start polling.
+2026-10-27 00:10:25,636 - WARNING - Goodbye!
+2026-10-30 21:53:36,075 - WARNING - Goodbye!
