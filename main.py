@@ -146,6 +146,8 @@ token = os.getenv("BOT_TOKEN")
 
 if not token:
     raise RuntimeError("BOT_TOKEN is not set")
+
+bot = Bot(token=token)
 dp = Dispatcher(bot)
 
 
