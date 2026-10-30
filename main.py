@@ -142,7 +142,10 @@ def delete_user(user_id):
 
 
 
-bot = Bot(token = '8806768223:AAE6ytld9_pvFotqvQ3ytom4EQ79B-YkXoU')
+token = os.getenv("BOT_TOKEN")
+
+if not token:
+    raise RuntimeError("BOT_TOKEN is not set")
 dp = Dispatcher(bot)
 
 
